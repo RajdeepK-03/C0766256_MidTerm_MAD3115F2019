@@ -22,8 +22,11 @@ class CustomerListTableViewController: UIViewController {
     @IBAction func AddCustomerButton(_ sender: UIBarButtonItem) {
     
     
-   
+        let sb1 = UIStoryboard(name: "Main", bundle: nil)
+        let NewCustomerVC = sb1.instantiateViewController(withIdentifier: "NewCustomerVC") as! AddNewCustomerViewController
         
+        
+        navigationController?.pushViewController(NewCustomerVC, animated: true)
     }
     /*
     // MARK: - Navigation
