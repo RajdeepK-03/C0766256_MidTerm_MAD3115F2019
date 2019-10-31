@@ -10,11 +10,21 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    
+    @IBOutlet var Email: UIView!
+    
+    
+    @IBOutlet var Password: UIView!
+    
+    
+    @IBOutlet weak var RememberMeSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func LoginButton(_ sender: UIBarButtonItem) {
+    }
+    
 
 }
 
