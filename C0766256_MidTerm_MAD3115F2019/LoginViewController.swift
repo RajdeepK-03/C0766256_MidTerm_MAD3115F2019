@@ -23,8 +23,20 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func LoginButton(_ sender: UIBarButtonItem) {
-    }
+        
+        
+        
+        
+        
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let CustomerVC = sb.instantiateViewController(withIdentifier: "CustomerVC") as! CustomerListTableViewController
+        
+
+        navigationController?.pushViewController(CustomerVC, animated: true)
+        
     
 
+}
 }
 

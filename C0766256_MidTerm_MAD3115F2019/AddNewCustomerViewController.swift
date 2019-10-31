@@ -1,5 +1,5 @@
 //
-//  CustomerListTableViewController.swift
+//  AddNewCustomerViewController.swift
 //  C0766256_MidTerm_MAD3115F2019
 //
 //  Created by MacStudent on 2019-10-31.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomerListTableViewController: UIViewController {
+class AddNewCustomerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +17,6 @@ class CustomerListTableViewController: UIViewController {
     }
     
 
-    
-    
-    @IBAction func AddCustomerButton(_ sender: UIBarButtonItem) {
-    
-    
-   
-        
-    }
     /*
     // MARK: - Navigation
 

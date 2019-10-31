@@ -52,7 +52,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Log in" id="Xa1-9K-it2">
                             <connections>
                                 <action selector="LoginButton:" destination="BYZ-38-t0r" id="zYI-pt-vfq"/>
-                                <segue destination="9Sr-Xz-LVf" kind="show" id="9QB-ol-5Xl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -69,10 +68,17 @@
         <!--Customer-->
         <scene sceneID="dnd-j2-fks">
             <objects>
-                <viewController id="9Sr-Xz-LVf" customClass="CustomerListTableViewController" customModule="C0766256_MidTerm_MAD3115F2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomerVC" id="9Sr-Xz-LVf" customClass="CustomerListTableViewController" customModule="C0766256_MidTerm_MAD3115F2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nrX-VJ-RAi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4VF-hj-4VJ">
+                                <rect key="frame" x="101" y="354" width="240" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="m5Z-OC-CF5"/>
                     </view>
@@ -80,19 +86,19 @@
                         <barButtonItem key="backBarButtonItem" title="Customer" id="ajf-gA-f5K"/>
                         <barButtonItem key="rightBarButtonItem" title="New Customer" id="e7k-NL-OAx">
                             <connections>
-                                <segue destination="Yy4-3n-csf" kind="show" id="bhO-gM-pBJ"/>
+                                <action selector="AddCustomerButton:" destination="9Sr-Xz-LVf" id="9E7-j5-pqp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0SB-E2-lUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1600" y="-656"/>
+            <point key="canvasLocation" x="1600.0000000000002" y="-656.25"/>
         </scene>
         <!--New Customer-->
         <scene sceneID="2xN-JG-QnQ">
             <objects>
-                <viewController id="Yy4-3n-csf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewCustomerVC" id="Yy4-3n-csf" customClass="AddNewCustomerViewController" customModule="C0766256_MidTerm_MAD3115F2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EnV-iW-TVd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
