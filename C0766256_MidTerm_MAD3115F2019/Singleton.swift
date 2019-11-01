@@ -27,8 +27,9 @@ class Singleton: NSObject
     {
         for (k,v) in customerDictionary
         {
-            if customerID == k
+            if k == customerID
             {
+                print("test")
                 return v
             }
         }
@@ -40,11 +41,11 @@ class Singleton: NSObject
     }
     func createCustomer()
     {
-        let cust1 = Customer(custId: 101, firstName: "deep", lastName: "kaur", email: "deep@gmail.com")
+        let cust1 = Customer(custId: 1, firstName: "deep", lastName: "kaur", email: "deep@gmail.com")
         AddCustomer(customer: cust1)
-        let cust2 = Customer(custId: 102, firstName: "Rajdeep", lastName: "Kaur", email: "Rajdeep@gmail.com")
+        let cust2 = Customer(custId: 2, firstName: "Rajdeep", lastName: "Kaur", email: "Rajdeep@gmail.com")
         AddCustomer(customer: cust2)
-        let cust3 = Customer(custId: 103, firstName: "gagan", lastName: "kang", email: "gagan@gmail.com")
+        let cust3 = Customer(custId: 3, firstName: "gagan", lastName: "kang", email: "gagan@gmail.com")
         AddCustomer(customer: cust3)
         
         print(customerDictionary)

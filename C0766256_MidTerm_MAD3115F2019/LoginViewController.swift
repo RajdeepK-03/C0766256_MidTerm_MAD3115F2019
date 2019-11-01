@@ -20,6 +20,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var RememberMeSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let gblData = Singleton.getInstance()
+        gblData.createCustomer()
         
             // Do any additional setup after loading the view.
     }

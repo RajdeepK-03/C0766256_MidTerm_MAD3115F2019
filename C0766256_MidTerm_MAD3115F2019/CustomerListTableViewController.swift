@@ -15,6 +15,7 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
     @IBOutlet weak var CustTable: UITableView!
 
     var sinObj = Singleton.getInstance()
+    var c : Customer? = nil
     
     
     
@@ -22,7 +23,6 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
         super.viewDidLoad()
         CustTable.dataSource = self
         CustTable.delegate = self
-        sinObj.createCustomer()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -34,27 +34,22 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let c = sinObj.returnCustObject(customerID: Int(indexPath.row+1))
+        print(indexPath.row)
+        c = sinObj.returnCustObject(customerID: indexPath.row+1)
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
-        cell.textLabel?.text = c?.fullName
+        cell.textLabel?.text = c?.firstName
         return cell
     }
     
     
     
-
-
+@IBAction func AddCustomerButton(_ sender: UIBarButtonItem)
+{
+    let sb1 = UIStoryboard(name: "Main", bundle: nil)
+      let NewCustomerVC = sb1.instantiateViewController(withIdentifier: "NewCustomerVC") as! AddNewCustomerViewController
+    navigationController?.pushViewController(NewCustomerVC, animated: true)
+    
 }
     
-    
-//    @IBAction func AddCustomerButton(_ sender: UIBarButtonItem) {
-//
-//
-//        let sb1 = UIStoryboard(name: "Main", bundle: nil)
-//        let NewCustomerVC = sb1.instantiateViewController(withIdentifier: "NewCustomerVC") as! AddNewCustomerViewController
-//
-//
-//        navigationController?.pushViewController(NewCustomerVC, animated: true)
-//    }
-    
 
+}

@@ -32,9 +32,9 @@ class AddNewCustomerViewController: UIViewController {
         let lname = lastName.text!
         let Email = email.text!
         
-        temp.AddCustomer(firstname: fname, lastname: lname, email: email)
+        temp.addNewCustomer(First_Name: fname, Last_Name: lname, email: Email)
         
-        self.performSegue(withIdentifier: "registered", sender: self)
+        self.performSegue(withIdentifier: "Use Added", sender: self)
     }
 
     /*
