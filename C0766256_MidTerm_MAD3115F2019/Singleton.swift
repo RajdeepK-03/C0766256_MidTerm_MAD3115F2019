@@ -46,16 +46,14 @@ class Singleton: NSObject
         AddCustomer(customer: cust2)
         let cust3 = Customer(custId: 103, firstName: "gagan", lastName: "kang", email: "gagan@gmail.com")
         AddCustomer(customer: cust3)
+        
+        print(customerDictionary)
     }
     func AddCustomer(customer: Customer)
     {
         customerDictionary.updateValue(customer, forKey: customer.custId!)
+        
     }
-    func printdata()
-    {
-        for i in customerDictionary.values
-        {
-            print(i.fullName)
-        }
-    }
+
 }
+

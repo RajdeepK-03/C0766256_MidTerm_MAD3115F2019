@@ -9,13 +9,33 @@
 import UIKit
 
 class AddNewCustomerViewController: UIViewController {
-
+    
+    @IBOutlet weak var firstName: UITextField!
+    
+    
+    @IBOutlet weak var lastName: UITextField!
+    
+    @IBOutlet weak var email: UITextField!
+    
+    var temp = Singleton.getInstance()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func add(_ sender: Any) {
+    
+        
+        let fname = firstName.text!
+        let lname = lastName.text!
+        let Email = email.text!
+        
+        temp.AddCustomer(firstname: fname, lastname: lname, email: email)
+        
+        self.performSegue(withIdentifier: "registered", sender: self)
+    }
 
     /*
     // MARK: - Navigation
