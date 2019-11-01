@@ -94,6 +94,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="CustTable" destination="4VF-hj-4VJ" id="mLJ-vV-WZ0"/>
+                        <outlet property="newCustomer" destination="e7k-NL-OAx" id="Lq9-DJ-9jt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0SB-E2-lUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

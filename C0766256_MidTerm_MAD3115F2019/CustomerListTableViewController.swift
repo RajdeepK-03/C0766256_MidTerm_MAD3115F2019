@@ -9,23 +9,11 @@
 import UIKit
 
 class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
-   
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
+   var temp = Singleton.getInstance()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var newCustomer: UIBarButtonItem!
     
+    @IBOutlet weak var CustTable: UITableView!
 
     
     
@@ -38,6 +26,16 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
         
         navigationController?.pushViewController(NewCustomerVC, animated: true)
     }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        CustTable.delegate = self
+        CustTable.dataSource = self
+        
+        // Do any additional setup after loading the view.
+    }
+    
     /*
     // MARK: - Navigation
 
