@@ -47,6 +47,10 @@ class Singleton: NSObject
         AddCustomer(customer: cust2)
         let cust3 = Customer(custId: 3, firstName: "gagan", lastName: "kang", email: "gagan@gmail.com")
         AddCustomer(customer: cust3)
+        let cust4 = Customer(custId: 4, firstName: "jaspreet", lastName: "Kaur", email: "preet@gmail.com")
+        AddCustomer(customer: cust4)
+        let cust5 = Customer(custId: 5, firstName: "preet", lastName: "chahal", email: "preet@gmail.com")
+        AddCustomer(customer: cust5)
         
         print(customerDictionary)
     }
