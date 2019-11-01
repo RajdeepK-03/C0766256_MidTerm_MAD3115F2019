@@ -42,7 +42,19 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
         navigationItem.leftBarButtonItem = btnLogOut
         navigationItem.leftBarButtonItems = [btnLogOut]
     }
-    
+    @objc func logout(sender: UIBarButtonItem)
+    {
+        navigationController?.popViewController(animated: true)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        CustTable.reloadData()
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return temp.returnCount()
+    }
     /*
     // MARK: - Navigation
 
