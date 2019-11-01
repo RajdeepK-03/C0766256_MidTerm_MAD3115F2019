@@ -11,7 +11,6 @@ import UIKit
 class BillDetailsViewController: UIViewController {
 
     
-    var billInformation : Customer? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
 
