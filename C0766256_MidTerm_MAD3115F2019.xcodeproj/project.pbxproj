@@ -16,6 +16,7 @@
 		9B1F6718236B748B00AB5220 /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1F6717236B748B00AB5220 /* CustomerListTableViewController.swift */; };
 		9B1F671A236B835400AB5220 /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */; };
 		9BE8F010236C7DE600E33D87 /* Swift Code in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8F00F236C7DE600E33D87 /* Swift Code */; };
+		9BE8F012236C84A600E33D87 /* customer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8F011236C84A600E33D87 /* customer.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9B1F6717236B748B00AB5220 /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
 		9BE8F00F236C7DE600E33D87 /* Swift Code */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Swift Code"; sourceTree = "<group>"; };
+		9BE8F011236C84A600E33D87 /* customer.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = customer.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				9B1F670F236B6A5300AB5220 /* Info.plist */,
 				9B1F6717236B748B00AB5220 /* CustomerListTableViewController.swift */,
 				9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */,
+				9BE8F011236C84A600E33D87 /* customer.plist */,
 			);
 			path = C0766256_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 				9B1F670E236B6A5300AB5220 /* LaunchScreen.storyboard in Resources */,
 				9B1F670B236B6A5300AB5220 /* Assets.xcassets in Resources */,
 				9BE8F010236C7DE600E33D87 /* Swift Code in Resources */,
+				9BE8F012236C84A600E33D87 /* customer.plist in Resources */,
 				9B1F6709236B6A5300AB5220 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

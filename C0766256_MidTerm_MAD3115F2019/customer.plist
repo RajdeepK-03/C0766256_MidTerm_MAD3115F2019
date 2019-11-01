@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customer</key>
+	<array>
+		<dict>
+			<key>custID</key>
+			<string>104</string>
+			<key>FirstName</key>
+			<string>deep</string>
+			<key>LastName</key>
+			<string>chahal</string>
+			<key>Email</key>
+			<string>chahal@gmail.com</string>
+			<key>Password</key>
+			<string>chahal123</string>
+		</dict>
+		<dict>
+			<key>custID</key>
+			<string>103</string>
+			<key>FirstName</key>
+			<string>Gagan</string>
+			<key>LastName</key>
+			<string>Kang</string>
+			<key>Email</key>
+			<string>gagan@gmail.com</string>
+			<key>Password</key>
+			<string>gagan123</string>
+		</dict>
+		<dict>
+			<key>custId</key>
+			<string>102</string>
+			<key>FirstName</key>
+			<string>deep</string>
+			<key>LastName</key>
+			<string>Kaur</string>
+			<key>Email</key>
+			<string>deep@gmail.com</string>
+			<key>Password</key>
+			<string>12345</string>
+		</dict>
+		<dict>
+			<key>custID</key>
+			<string>101</string>
+			<key>FirstName</key>
+			<string>Rajdeep</string>
+			<key>LastName</key>
+			<string>Kaur</string>
+			<key>Email</key>
+			<string>rajdeep@gmail.com</string>
+			<key>Password</key>
+			<string>123</string>
+		</dict>
+	</array>
+</dict>
+</plist>
