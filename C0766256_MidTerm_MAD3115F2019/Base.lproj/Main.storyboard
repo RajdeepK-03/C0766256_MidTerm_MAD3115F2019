@@ -165,6 +165,7 @@
                         <outlet property="email" destination="6BY-5a-9wv" id="Wus-S2-2AI"/>
                         <outlet property="firstName" destination="irU-8R-YdF" id="LUq-lK-mfb"/>
                         <outlet property="lastName" destination="ywA-Dv-7ue" id="O4v-nn-bNF"/>
+                        <segue destination="9Sr-Xz-LVf" kind="show" identifier="saved" id="jWd-ra-aOB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPb-CB-yjb" userLabel="First Responder" sceneMemberID="firstResponder"/>

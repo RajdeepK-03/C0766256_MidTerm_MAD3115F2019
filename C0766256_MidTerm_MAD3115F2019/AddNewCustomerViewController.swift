@@ -34,9 +34,12 @@ class AddNewCustomerViewController: UIViewController {
         
         temp.addNewCustomer(First_Name: fname, Last_Name: lname, email: Email)
         
-        self.performSegue(withIdentifier: "Use Added", sender: self)
+        self.performSegue(withIdentifier: "saved", sender: self)
     }
 
+    
+    
+    
     /*
     // MARK: - Navigation
 
