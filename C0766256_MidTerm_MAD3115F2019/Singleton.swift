@@ -29,7 +29,7 @@ class Singleton: NSObject
         {
             if k == customerID
             {
-                print("test")
+               // print("test")
                 return v
             }
         }
