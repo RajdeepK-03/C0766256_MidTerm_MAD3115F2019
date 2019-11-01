@@ -59,8 +59,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="Email" destination="8bC-Xf-vdC" id="BFd-3R-z4S"/>
-                        <outlet property="Password" destination="8bC-Xf-vdC" id="z85-NH-KdL"/>
+                        <outlet property="Email" destination="Ifh-91-Niv" id="w1Y-ji-svv"/>
+                        <outlet property="Password" destination="iLW-lX-cfH" id="cwR-vp-S9f"/>
                         <outlet property="RememberMeSwitch" destination="LNq-Qh-31b" id="kvw-QI-htF"/>
                     </connections>
                 </viewController>
