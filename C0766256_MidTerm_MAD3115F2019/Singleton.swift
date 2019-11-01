@@ -5,6 +5,8 @@
 //  Created by MacStudent on 2019-11-01.
 //  Copyright © 2019 MacStudent. All rights reserved.
 //
+//
+
 
 import Foundation
 class Singleton: NSObject
@@ -59,6 +61,7 @@ class Singleton: NSObject
         customerDictionary.updateValue(customer, forKey: customer.custId!)
         
     }
-
+ // referred from https://learnappmaking.com/singletons-swift/
+    
 }
 
