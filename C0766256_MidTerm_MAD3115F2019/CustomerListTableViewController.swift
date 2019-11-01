@@ -36,6 +36,12 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
         LogOutButton()
         temp.createCustomer()        // Do any additional setup after loading the view.
     }
+    private func LogOutButton()
+    {
+        let btnLogOut = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(CustomerListTableViewController.logout(sender:)))
+        navigationItem.leftBarButtonItem = btnLogOut
+        navigationItem.leftBarButtonItems = [btnLogOut]
+    }
     
     /*
     // MARK: - Navigation
