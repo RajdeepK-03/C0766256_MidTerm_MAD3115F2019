@@ -31,8 +31,8 @@ class LoginViewController: UIViewController {
         let userEmail = Email.text
         let password = Password.text!
             
-        if password.count < 6
-        {
+        //if password.count < 6
+       //{
         if userEmail == "rajdeep@gmail.com" && password == "123" || userEmail == "deep@gmail.com" && password == "12345"
         {
                 print("User Successfully login")
@@ -67,7 +67,6 @@ class LoginViewController: UIViewController {
     
     
 
-}
 
         
         
