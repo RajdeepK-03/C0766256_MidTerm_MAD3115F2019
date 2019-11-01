@@ -100,7 +100,6 @@
                         <barButtonItem key="rightBarButtonItem" title="New Customer" id="e7k-NL-OAx">
                             <connections>
                                 <action selector="AddCustomerButton:" destination="9Sr-Xz-LVf" id="9E7-j5-pqp"/>
-                                <segue destination="Yy4-3n-csf" kind="show" id="DIN-vg-GsK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
