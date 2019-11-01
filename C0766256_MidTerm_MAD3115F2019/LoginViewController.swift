@@ -69,22 +69,24 @@ class LoginViewController: UIViewController {
 
         
         
-        func readCustomersPlistFile(){
+        //func readCustomersPlistFile(){
             
-            let plist = Bundle.main.path(forResource: "customers", ofType: "plist")
+            //let plist = Bundle.main.path(forResource: "customers", ofType: "plist")
             
-            if let dict = NSMutableDictionary(contentsOfFile: plist!){
-                if let customers = dict["customers"] as? [[String:Any]]
-                {
-                    for customer in customers {
-                        let id = customer["customerID"] as! Int
-                        let firstName = customer["customerFirstName"] as! String
-                        let lastName = customer["customerLastName"] as! String
-                        let email = customer["email"] as! String
-                        let password = customer["password"] as! String
+            //if let dict = NSMutableDictionary(contentsOfFile: plist!){
+              //  if let customers = dict["customers"] as? [[String:Any]]
+                //{
+                  //  for customer in customers {
+                    //    let id = customer["customerID"] as! Int
+                     //   let firstName = customer["customerFirstName"] as! String
+                       // let lastName = customer["customerLastName"] as! String
+                       // let email = customer["email"] as! String
+                        //let password = customer["password"] as! String
                         
-                        self.dictCustomers.append(Customer(customerId: id, firstName: firstName, lastName: lastName, emailId: email, password: password))
-                    }
-                }
+        
+                   // }}
 }
+
+}
+
 
