@@ -66,7 +66,13 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Customer's List"
-           /*
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb3 = UIStoryboard(name: "Main", bundle: nil)
+        let BillListVC = sb3.instantiateViewController(withIdentifier: "BillVC") as? BillDetailsViewController
+        BillListVC?.billInformation = temp.returnCustObject(customerID: indexPath.row + 1)
+        navigationController?.pushViewController(BillListVC!, animated: true)
+    } /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
