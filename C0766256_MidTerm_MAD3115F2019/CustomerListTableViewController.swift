@@ -32,8 +32,9 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
         super.viewDidLoad()
         CustTable.delegate = self
         CustTable.dataSource = self
-        
-        // Do any additional setup after loading the view.
+        navigationItem.hidesBackButton = true
+        LogOutButton()
+        temp.createCustomer()        // Do any additional setup after loading the view.
     }
     
     /*
