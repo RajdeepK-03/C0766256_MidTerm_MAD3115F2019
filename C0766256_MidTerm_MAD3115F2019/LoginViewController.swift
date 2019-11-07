@@ -20,9 +20,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var RememberMeSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let gblData = Singleton.getInstance()
-        gblData.createCustomer()
-        
+        let gData = Singleton.getInstance()
+        gData.createCustomer()
+        Email.text = UserDefaults.standard.string(forKey: "u_name")
+        Password.text = UserDefaults.standard.string(forKey: "u_password")
+        RememberMeSwitch.isOn=true
             // Do any additional setup after loading the view.
     }
     @IBAction func LoginButton(_ sender: UIBarButtonItem) {
@@ -63,8 +65,24 @@ class LoginViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Ignore", style: .destructive, handler: nil))
             self.present(alert, animated: true)
         }
-
+    }
     
+    @IBAction func RememberMeSwitch(_ sender: UISwitch) {
+    
+        if RememberMeSwitch.isOn
+        {
+            let u_name = Email.text!
+            let u_password = Password.text!
+            UserDefaults.standard.set(u_name, forKey: "u_name")
+            UserDefaults.standard.set(u_password, forKey: "u_password")
+            
+        }
+        else{
+            UserDefaults.standard.removeObject(forKey: "u_name")
+            UserDefaults.standard.removeObject(forKey: "u_password")
+        }
+        
+    }
     
 
 
@@ -86,7 +104,7 @@ class LoginViewController: UIViewController {
                         
         
                    // }}
-}
+
 
 }
 
