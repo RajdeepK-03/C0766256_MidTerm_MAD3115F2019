@@ -37,7 +37,7 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
         print(indexPath.row)
         c = sinObj.returnCustObject(customerID: indexPath.row+1)
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
-        cell.textLabel?.text = c?.firstName
+        cell.textLabel?.text = c?.fullName
         return cell
     }
     

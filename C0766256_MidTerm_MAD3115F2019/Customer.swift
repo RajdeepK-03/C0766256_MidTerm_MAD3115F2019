@@ -9,9 +9,9 @@
 import Foundation
 class Customer
 {
-    var custId : Int?
-    var firstName : String?
-    var lastName : String?
+    var custId : Int
+    var firstName : String
+    var lastName : String
     var fullName : String
     {
         return "\(self.firstName) \(self.lastName)"

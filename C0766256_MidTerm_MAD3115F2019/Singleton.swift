@@ -54,11 +54,11 @@ class Singleton: NSObject
         let cust5 = Customer(custId: 5, firstName: "preet", lastName: "chahal", email: "preet@gmail.com")
         AddCustomer(customer: cust5)
         
-        print(customerDictionary)
+        //print(customerDictionary)
     }
     func AddCustomer(customer: Customer)
     {
-        customerDictionary.updateValue(customer, forKey: customer.custId!)
+        customerDictionary.updateValue(customer, forKey: customer.custId)
         
     }
  // referred from https://learnappmaking.com/singletons-swift/
