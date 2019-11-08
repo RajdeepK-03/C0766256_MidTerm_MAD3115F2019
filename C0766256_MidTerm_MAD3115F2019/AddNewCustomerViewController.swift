@@ -27,19 +27,40 @@ class AddNewCustomerViewController: UIViewController {
     
     @IBAction func add(_ sender: Any) {
     
-        
+      let story=UIStoryboard(name: "Main", bundle: nil)
+    let CustomerVC=story.instantiateViewController(withIdentifier: "CustomerVC") as! CustomerListTableViewController
+        navigationController?.pushViewController(CustomerVC, animated: true)
         let fname = firstName.text!
         let lname = lastName.text!
+        if (email.text?.isValidEmail())!
+        {
         let Email = email.text!
-        
         temp.addNewCustomer(First_Name: fname, Last_Name: lname, email: Email)
         
-        self.performSegue(withIdentifier: "saved", sender: self)
+       // self.performSegue(withIdentifier: "saved", sender: self)
+        let alert = UIAlertController(title: "Success", message: "Customer added successfully", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
     }
-
+    else{
+        
+        let alert = UIAlertController(title: "Invalid Email", message: "Please Enter a Valid E-mail Address", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+        
+    }
+    }
     
-    
-    
+//    func  ValidEmail() -> Bool
+//    {
+//        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+//        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+//        return emailTest.evaluate(with: self)
+//    }
     /*
     // MARK: - Navigation
 

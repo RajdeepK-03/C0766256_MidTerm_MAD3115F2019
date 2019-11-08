@@ -15,6 +15,7 @@
 		9B1F6716236B6A6200AB5220 /* lambton_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B1F6715236B6A6200AB5220 /* lambton_logo.jpg */; };
 		9B1F6718236B748B00AB5220 /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1F6717236B748B00AB5220 /* CustomerListTableViewController.swift */; };
 		9B1F671A236B835400AB5220 /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */; };
+		9B5DA34C2374E5EE005E61E2 /* EmailValidationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DA34B2374E5EE005E61E2 /* EmailValidationExtension.swift */; };
 		9BB065AC2373B6D4002365A8 /* bill.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB065AB2373B6D4002365A8 /* bill.plist */; };
 		9BE8F010236C7DE600E33D87 /* Swift Code in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8F00F236C7DE600E33D87 /* Swift Code */; };
 		9BE8F012236C84A600E33D87 /* customer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8F011236C84A600E33D87 /* customer.plist */; };
@@ -34,6 +35,7 @@
 		9B1F6715236B6A6200AB5220 /* lambton_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lambton_logo.jpg; sourceTree = "<group>"; };
 		9B1F6717236B748B00AB5220 /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
+		9B5DA34B2374E5EE005E61E2 /* EmailValidationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationExtension.swift; sourceTree = "<group>"; };
 		9BB065AB2373B6D4002365A8 /* bill.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = bill.plist; sourceTree = "<group>"; };
 		9BE8F00F236C7DE600E33D87 /* Swift Code */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Swift Code"; sourceTree = "<group>"; };
 		9BE8F011236C84A600E33D87 /* customer.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = customer.plist; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */,
 				9BE8F011236C84A600E33D87 /* customer.plist */,
 				9BB065AB2373B6D4002365A8 /* bill.plist */,
+				9B5DA34B2374E5EE005E61E2 /* EmailValidationExtension.swift */,
 			);
 			path = C0766256_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B1F6706236B6A5300AB5220 /* LoginViewController.swift in Sources */,
+				9B5DA34C2374E5EE005E61E2 /* EmailValidationExtension.swift in Sources */,
 				9BF97FDD236CA989003EBD0A /* Singleton.swift in Sources */,
 				9BF97FDB236CA962003EBD0A /* Customer.swift in Sources */,
 				9BEBCD45236CB3510090DB99 /* BillDetailsViewController.swift in Sources */,

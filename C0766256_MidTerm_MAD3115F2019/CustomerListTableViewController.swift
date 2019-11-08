@@ -34,14 +34,22 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(indexPath.row)
+        //print(indexPath.row)
         c = sinObj.returnCustObject(customerID: indexPath.row+1)
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
         cell.textLabel?.text = c?.fullName
         return cell
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        CustTable.reloadData()
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyb = UIStoryboard(name: "Main", bundle: nil)
+        
+         let BillListVC = storyb.instantiateViewController(withIdentifier: "BillListVC") as! BillDetailsViewController
+        BillListVC.billInformation=sinObj.returnCustObject(customerID: indexPath.row+1); self.navigationController?.pushViewController(BillListVC, animated: true)
+    }
     
 @IBAction func AddCustomerButton(_ sender: UIBarButtonItem)
 {
@@ -50,6 +58,9 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
     navigationController?.pushViewController(NewCustomerVC, animated: true)
     
 }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        <#code#>
+//    }
     
 
 }

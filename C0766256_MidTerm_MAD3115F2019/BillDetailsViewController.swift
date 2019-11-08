@@ -9,11 +9,19 @@
 import UIKit
 
 class BillDetailsViewController: UIViewController {
-
+    var billInformation : Customer? = nil
     
+    @IBOutlet weak var CustID: UILabel!
+    
+    @IBOutlet weak var CustName: UILabel!
+    
+    @IBOutlet weak var CustEmail: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+       // CustID.text = billInformation?.custId
+        
+        CustName.text = billInformation?.fullName
         // Do any additional setup after loading the view.
     }
     
