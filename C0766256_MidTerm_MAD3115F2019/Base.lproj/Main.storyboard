@@ -174,7 +174,7 @@
             </objects>
             <point key="canvasLocation" x="2469.5652173913045" y="-656.25"/>
         </scene>
-        <!--Customer Bill details-->
+        <!--Customer Bill Details-->
         <scene sceneID="Nic-ed-gUK">
             <objects>
                 <viewController storyboardIdentifier="BillListVC" id="dGe-5W-lBc" customClass="BillDetailsViewController" customModule="C0766256_MidTerm_MAD3115F2019" customModuleProvider="target" sceneMemberID="viewController">
@@ -232,6 +232,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-60-TMy">
+                                <rect key="frame" x="174" y="178" width="220" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vn4-7c-WsF">
                                 <rect key="frame" x="174" y="149" width="219" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -260,20 +267,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-60-TMy">
-                                <rect key="frame" x="174" y="178" width="220" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OuK-6h-6QR">
+                                <rect key="frame" x="0.0" y="37" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Customer Details" id="vzK-Ft-i1v">
+                                        <barButtonItem key="backBarButtonItem" title="Customer Table" id="GuE-cU-jSg"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="W0q-Fa-uuM"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <viewLayoutGuide key="safeArea" id="ZWI-kE-hHK"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Customer Bill details" id="kpX-d0-FmE">
-                        <barButtonItem key="backBarButtonItem" title="customers" id="J0B-3L-OON"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Customer Bill Details" id="t5B-ba-y7R">
+                        <barButtonItem key="backBarButtonItem" title="customer" id="1y8-Kf-39u"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add bill" id="Gso-ZQ-Dtk">
+                            <connections>
+                                <action selector="addnewbill:" destination="dGe-5W-lBc" id="1Vf-LN-pjw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="CustEmail" destination="e0B-ta-dnq" id="9op-XT-bTl"/>
                         <outlet property="CustID" destination="Vn4-7c-WsF" id="Sph-rl-E2F"/>
@@ -283,7 +300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExB-rP-SW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3281.1594202898555" y="-655.58035714285711"/>
+            <point key="canvasLocation" x="4191.304347826087" y="-655.58035714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J8C-l3-UyO">
@@ -302,6 +319,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zcx-9W-DtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="-655.58035714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Chg-6v-lDl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DGR-PL-H31" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0pE-zo-uae">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dGe-5W-lBc" kind="relationship" relationship="rootViewController" id="Rzl-DC-lOf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpv-zD-9cF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3281.1594202898555" y="-655.58035714285711"/>
         </scene>
     </scenes>
     <resources>

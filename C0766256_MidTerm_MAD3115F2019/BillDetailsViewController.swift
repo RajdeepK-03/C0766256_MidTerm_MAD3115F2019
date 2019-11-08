@@ -11,7 +11,12 @@ import UIKit
 class BillDetailsViewController: UIViewController {
     var billInformation : Customer? = nil
     
+    
+    
+    @IBAction func addnewbill(_ sender: UIBarButtonItem) {
+    }
     @IBOutlet weak var CustID: UILabel!
+   
     
     @IBOutlet weak var CustName: UILabel!
     
