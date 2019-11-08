@@ -20,6 +20,9 @@
 		9BE8F010236C7DE600E33D87 /* Swift Code in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8F00F236C7DE600E33D87 /* Swift Code */; };
 		9BE8F012236C84A600E33D87 /* customer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8F011236C84A600E33D87 /* customer.plist */; };
 		9BEBCD45236CB3510090DB99 /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBCD44236CB3510090DB99 /* BillDetailsViewController.swift */; };
+		9BF6383C2375DA2A00960225 /* user_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF6383B2375DA2A00960225 /* user_logo.png */; };
+		9BF6383F2375DC1A00960225 /* Extension+Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6383E2375DC1A00960225 /* Extension+Float.swift */; };
+		9BF638412375DC3200960225 /* Int+String casting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF638402375DC3200960225 /* Int+String casting.swift */; };
 		9BF97FDB236CA962003EBD0A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF97FDA236CA962003EBD0A /* Customer.swift */; };
 		9BF97FDD236CA989003EBD0A /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF97FDC236CA989003EBD0A /* Singleton.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +43,9 @@
 		9BE8F00F236C7DE600E33D87 /* Swift Code */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Swift Code"; sourceTree = "<group>"; };
 		9BE8F011236C84A600E33D87 /* customer.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = customer.plist; sourceTree = "<group>"; };
 		9BEBCD44236CB3510090DB99 /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
+		9BF6383B2375DA2A00960225 /* user_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_logo.png; sourceTree = "<group>"; };
+		9BF6383E2375DC1A00960225 /* Extension+Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Float.swift"; sourceTree = "<group>"; };
+		9BF638402375DC3200960225 /* Int+String casting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+String casting.swift"; sourceTree = "<group>"; };
 		9BF97FDA236CA962003EBD0A /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9BF97FDC236CA989003EBD0A /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,12 +80,14 @@
 		9B1F6702236B6A5300AB5220 /* C0766256_MidTerm_MAD3115F2019 */ = {
 			isa = PBXGroup;
 			children = (
+				9BF6383D2375DBEB00960225 /* Extensions */,
 				9BE8F00F236C7DE600E33D87 /* Swift Code */,
 				9B1F6703236B6A5300AB5220 /* AppDelegate.swift */,
 				9BEBCD44236CB3510090DB99 /* BillDetailsViewController.swift */,
 				9B1F6705236B6A5300AB5220 /* LoginViewController.swift */,
 				9B1F6707236B6A5300AB5220 /* Main.storyboard */,
 				9B1F670A236B6A5300AB5220 /* Assets.xcassets */,
+				9BF6383B2375DA2A00960225 /* user_logo.png */,
 				9B1F6715236B6A6200AB5220 /* lambton_logo.jpg */,
 				9B1F670C236B6A5300AB5220 /* LaunchScreen.storyboard */,
 				9B1F670F236B6A5300AB5220 /* Info.plist */,
@@ -89,9 +97,18 @@
 				9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */,
 				9BE8F011236C84A600E33D87 /* customer.plist */,
 				9BB065AB2373B6D4002365A8 /* bill.plist */,
-				9B5DA34B2374E5EE005E61E2 /* EmailValidationExtension.swift */,
 			);
 			path = C0766256_MidTerm_MAD3115F2019;
+			sourceTree = "<group>";
+		};
+		9BF6383D2375DBEB00960225 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B5DA34B2374E5EE005E61E2 /* EmailValidationExtension.swift */,
+				9BF6383E2375DC1A00960225 /* Extension+Float.swift */,
+				9BF638402375DC3200960225 /* Int+String casting.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +176,7 @@
 				9BE8F010236C7DE600E33D87 /* Swift Code in Resources */,
 				9BE8F012236C84A600E33D87 /* customer.plist in Resources */,
 				9B1F6709236B6A5300AB5220 /* Main.storyboard in Resources */,
+				9BF6383C2375DA2A00960225 /* user_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B1F6706236B6A5300AB5220 /* LoginViewController.swift in Sources */,
+				9BF638412375DC3200960225 /* Int+String casting.swift in Sources */,
 				9B5DA34C2374E5EE005E61E2 /* EmailValidationExtension.swift in Sources */,
+				9BF6383F2375DC1A00960225 /* Extension+Float.swift in Sources */,
 				9BF97FDD236CA989003EBD0A /* Singleton.swift in Sources */,
 				9BF97FDB236CA962003EBD0A /* Customer.swift in Sources */,
 				9BEBCD45236CB3510090DB99 /* BillDetailsViewController.swift in Sources */,

@@ -16,12 +16,14 @@ class BillDetailsViewController: UIViewController {
     @IBOutlet weak var CustName: UILabel!
     
     @IBOutlet weak var CustEmail: UILabel!
+    @IBOutlet weak var TotalBill: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       // CustID.text = billInformation?.custId
-        
+        CustID.text = billInformation?.custId.castString()
         CustName.text = billInformation?.fullName
+        CustEmail.text = billInformation?.email
+        TotalBill.text = billInformation?.totalBill?.formatCurrency()
         // Do any additional setup after loading the view.
     }
     
