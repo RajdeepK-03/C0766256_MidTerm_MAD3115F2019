@@ -10,11 +10,13 @@ import UIKit
 
 class BillViewCellTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var BillID: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    @IBOutlet weak var BillType: UILabel!
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

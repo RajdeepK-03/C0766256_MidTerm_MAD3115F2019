@@ -8,7 +8,22 @@
 
 import UIKit
 
-class BillDetailsViewController: UIViewController {
+class BillDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (billInformation?.array1.count)!
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+       let a = billobj
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BillCell", for: indexPath) as? BillViewCellTableViewCell
+        cell?.BillID.text =  "\(a?.billId)"
+        return cell!
+    }
+    
 
     
     var sinObj = Singleton.getInstance()
@@ -16,6 +31,7 @@ class BillDetailsViewController: UIViewController {
     
     
     var billInformation : Customer? = nil
+    var billobj : Bill? = nil
     
     
     
@@ -37,6 +53,7 @@ class BillDetailsViewController: UIViewController {
         TotalBill.text = billInformation?.totalBill?.formatCurrency()
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var BillTable: UITableView!
     
 
     /*
