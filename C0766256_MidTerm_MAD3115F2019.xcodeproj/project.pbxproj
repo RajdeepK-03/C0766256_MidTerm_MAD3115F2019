@@ -17,6 +17,10 @@
 		9B1F671A236B835400AB5220 /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */; };
 		9B5DA34C2374E5EE005E61E2 /* EmailValidationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DA34B2374E5EE005E61E2 /* EmailValidationExtension.swift */; };
 		9BB065AC2373B6D4002365A8 /* bill.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB065AB2373B6D4002365A8 /* bill.plist */; };
+		9BC03D722376182A00D337A4 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC03D712376182A00D337A4 /* Customer.swift */; };
+		9BC03D742376192200D337A4 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC03D732376192200D337A4 /* Bill.swift */; };
+		9BC03D782376198400D337A4 /* InternetBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC03D772376198400D337A4 /* InternetBill.swift */; };
+		9BC03D7A23761A0200D337A4 /* MobileBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC03D7923761A0200D337A4 /* MobileBill.swift */; };
 		9BE8F012236C84A600E33D87 /* customer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8F011236C84A600E33D87 /* customer.plist */; };
 		9BEBCD45236CB3510090DB99 /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBCD44236CB3510090DB99 /* BillDetailsViewController.swift */; };
 		9BF6383C2375DA2A00960225 /* user_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF6383B2375DA2A00960225 /* user_logo.png */; };
@@ -27,11 +31,7 @@
 		9BFCF24D2375EF9F0031EC36 /* MinuteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF24C2375EF9F0031EC36 /* MinuteExtension.swift */; };
 		9BFCF24F2375EFA50031EC36 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF24E2375EFA50031EC36 /* DateExtension.swift */; };
 		9BFCF2512375EFAB0031EC36 /* UnitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF2502375EFAB0031EC36 /* UnitExtension.swift */; };
-		9BFCF2552375F7A20031EC36 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF2542375F7A20031EC36 /* Bill.swift */; };
 		9BFCF2592375F7AE0031EC36 /* HydroBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF2582375F7AE0031EC36 /* HydroBill.swift */; };
-		9BFCF25B2375F7BF0031EC36 /* InternetBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF25A2375F7BF0031EC36 /* InternetBill.swift */; };
-		9BFCF25D2375F7C60031EC36 /* MobileBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF25C2375F7C60031EC36 /* MobileBill.swift */; };
-		9BFCF25F2375F7CE0031EC36 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF25E2375F7CE0031EC36 /* Customer.swift */; };
 		9BFCF2612375FDA20031EC36 /* BillViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF2602375FDA20031EC36 /* BillViewCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +48,10 @@
 		9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
 		9B5DA34B2374E5EE005E61E2 /* EmailValidationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationExtension.swift; sourceTree = "<group>"; };
 		9BB065AB2373B6D4002365A8 /* bill.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = bill.plist; sourceTree = "<group>"; };
+		9BC03D712376182A00D337A4 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9BC03D732376192200D337A4 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		9BC03D772376198400D337A4 /* InternetBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetBill.swift; sourceTree = "<group>"; };
+		9BC03D7923761A0200D337A4 /* MobileBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileBill.swift; sourceTree = "<group>"; };
 		9BE8F011236C84A600E33D87 /* customer.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = customer.plist; sourceTree = "<group>"; };
 		9BEBCD44236CB3510090DB99 /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
 		9BF6383B2375DA2A00960225 /* user_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_logo.png; sourceTree = "<group>"; };
@@ -58,11 +62,7 @@
 		9BFCF24C2375EF9F0031EC36 /* MinuteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteExtension.swift; sourceTree = "<group>"; };
 		9BFCF24E2375EFA50031EC36 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		9BFCF2502375EFAB0031EC36 /* UnitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtension.swift; sourceTree = "<group>"; };
-		9BFCF2542375F7A20031EC36 /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bill.swift; path = "../../../../Downloads/C0764930_MidTerm_MAD3115F2019-P1-RakeshKumar/C0764930_MidTerm_MAD3115F2019-P1/Bill.swift"; sourceTree = "<group>"; };
 		9BFCF2582375F7AE0031EC36 /* HydroBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydroBill.swift; sourceTree = "<group>"; };
-		9BFCF25A2375F7BF0031EC36 /* InternetBill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternetBill.swift; path = "../../../../Downloads/C0764930_MidTerm_MAD3115F2019-P1-RakeshKumar/C0764930_MidTerm_MAD3115F2019-P1/InternetBill.swift"; sourceTree = "<group>"; };
-		9BFCF25C2375F7C60031EC36 /* MobileBill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobileBill.swift; path = "../../../../Downloads/C0764930_MidTerm_MAD3115F2019-P1-RakeshKumar/C0764930_MidTerm_MAD3115F2019-P1/MobileBill.swift"; sourceTree = "<group>"; };
-		9BFCF25E2375F7CE0031EC36 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = "../../../../Downloads/C0764930_MidTerm_MAD3115F2019-P1-RakeshKumar/C0764930_MidTerm_MAD3115F2019-P1/Customer.swift"; sourceTree = "<group>"; };
 		9BFCF2602375FDA20031EC36 /* BillViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,11 +134,11 @@
 		9BFCF2392375EF410031EC36 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				9BFCF25E2375F7CE0031EC36 /* Customer.swift */,
-				9BFCF25C2375F7C60031EC36 /* MobileBill.swift */,
-				9BFCF25A2375F7BF0031EC36 /* InternetBill.swift */,
 				9BFCF2582375F7AE0031EC36 /* HydroBill.swift */,
-				9BFCF2542375F7A20031EC36 /* Bill.swift */,
+				9BC03D712376182A00D337A4 /* Customer.swift */,
+				9BC03D732376192200D337A4 /* Bill.swift */,
+				9BC03D772376198400D337A4 /* InternetBill.swift */,
+				9BC03D7923761A0200D337A4 /* MobileBill.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -218,23 +218,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC03D782376198400D337A4 /* InternetBill.swift in Sources */,
 				9B1F6706236B6A5300AB5220 /* LoginViewController.swift in Sources */,
-				9BFCF25D2375F7C60031EC36 /* MobileBill.swift in Sources */,
 				9BFCF24F2375EFA50031EC36 /* DateExtension.swift in Sources */,
 				9BFCF24B2375EF9D0031EC36 /* DataUsedExtension.swift in Sources */,
 				9BFCF2592375F7AE0031EC36 /* HydroBill.swift in Sources */,
+				9BC03D742376192200D337A4 /* Bill.swift in Sources */,
 				9BFCF2612375FDA20031EC36 /* BillViewCellTableViewCell.swift in Sources */,
 				9BF638412375DC3200960225 /* Int+String casting.swift in Sources */,
-				9BFCF2552375F7A20031EC36 /* Bill.swift in Sources */,
 				9B5DA34C2374E5EE005E61E2 /* EmailValidationExtension.swift in Sources */,
 				9BF6383F2375DC1A00960225 /* Extension+Float.swift in Sources */,
 				9BF97FDD236CA989003EBD0A /* Singleton.swift in Sources */,
-				9BFCF25B2375F7BF0031EC36 /* InternetBill.swift in Sources */,
+				9BC03D722376182A00D337A4 /* Customer.swift in Sources */,
 				9BFCF24D2375EF9F0031EC36 /* MinuteExtension.swift in Sources */,
 				9BEBCD45236CB3510090DB99 /* BillDetailsViewController.swift in Sources */,
+				9BC03D7A23761A0200D337A4 /* MobileBill.swift in Sources */,
 				9B1F671A236B835400AB5220 /* AddNewCustomerViewController.swift in Sources */,
 				9B1F6718236B748B00AB5220 /* CustomerListTableViewController.swift in Sources */,
-				9BFCF25F2375F7CE0031EC36 /* Customer.swift in Sources */,
 				9B1F6704236B6A5300AB5220 /* AppDelegate.swift in Sources */,
 				9BFCF2512375EFAB0031EC36 /* UnitExtension.swift in Sources */,
 			);
