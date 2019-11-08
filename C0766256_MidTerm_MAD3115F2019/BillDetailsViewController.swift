@@ -8,7 +8,20 @@
 
 import UIKit
 
-class BillDetailsViewController: UIViewController {
+class BillDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var sinObj = Singleton.getInstance()
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
     var billInformation : Customer? = nil
     
     

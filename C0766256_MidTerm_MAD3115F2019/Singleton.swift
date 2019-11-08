@@ -43,6 +43,7 @@ class Singleton: NSObject
     }
     func createCustomer()
     {
+        let cust new = Customer
         let cust1 = Customer(custId: 1, firstName: "deep", lastName: "kaur", email: "deep@gmail.com")
         AddCustomer(customer: cust1)
         let cust2 = Customer(custId: 2, firstName: "Rajdeep", lastName: "Kaur", email: "Rajdeep@gmail.com")
@@ -53,6 +54,8 @@ class Singleton: NSObject
         AddCustomer(customer: cust4)
         let cust5 = Customer(custId: 5, firstName: "preet", lastName: "chahal", email: "preet@gmail.com")
         AddCustomer(customer: cust5)
+        
+        
         
         //print(customerDictionary)
     }
