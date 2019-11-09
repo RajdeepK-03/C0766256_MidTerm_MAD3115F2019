@@ -43,6 +43,7 @@ class Singleton: NSObject
     }
     func createCustomer()
     {
+        // cust 1 data
         
         let i1 = InternetBill(providerName : "Rogers", gbUsed : 500, billAmount : 56.50, billId : 1 , billDate : "Wednesday, 19 June, 2019", billType : Bill.bTypes.Internet)
         let m1 = MobileBill(manufacturerName:"Galaxy", planName:"Prepaid Talk", phoneNumber:6464647484, internetUsed:5, minutesUsed:356, billAmount:250.0, billId : 2, billType : Bill.bTypes.Mobile, billDate: "Wednesday, 19 June, 2019")
@@ -53,6 +54,9 @@ class Singleton: NSObject
         AddCustomer(customer: cust1)
         
         print(cust1)
+        
+    
+       // cust 2 data
         
         let h1 = HydroBill(billID : 1 , billDate : "Wednesday, 19 June, 2019", billType : Bill.bTypes.Hydro, agencyName : "Planet Energy", unitConsumed : 29 , billAmount : 54.35)
         let i2 = InternetBill(providerName : "Fido", gbUsed : 600, billAmount : 70.00, billId : 2 , billDate : "Wednesday, 29 June, 2019", billType : Bill.bTypes.Internet)
