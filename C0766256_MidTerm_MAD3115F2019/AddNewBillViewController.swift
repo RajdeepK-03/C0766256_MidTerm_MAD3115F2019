@@ -21,7 +21,7 @@ class AddNewBillViewController: UIViewController {
     
     @IBOutlet weak var BAmount: UITextField!
     
-   let datePicker = UIDatePicker()
+   //let datePicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
