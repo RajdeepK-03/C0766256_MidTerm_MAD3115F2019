@@ -67,6 +67,9 @@ class Singleton: NSObject
         
         let m2 = MobileBill(manufacturerName:"Apple", planName:"Prepaid Talk + Messages", phoneNumber:6476954211, internetUsed:6, minutesUsed:124, billAmount:80.00, billId : 1, billType : Bill.bTypes.Mobile, billDate: "Friday, 19 June, 2019")
         
+        
+        //customer 3
+        
         let cust3 = Customer(custId: 3, firstName: "gagan", lastName: "kang", email: "gagan@gmail.com", billDictionary: [m2.billId : m2])
         AddCustomer(customer: cust3)
         
