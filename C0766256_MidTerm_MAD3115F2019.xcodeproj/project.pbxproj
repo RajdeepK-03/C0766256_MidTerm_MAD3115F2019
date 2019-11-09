@@ -17,6 +17,7 @@
 		9B1F671A236B835400AB5220 /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */; };
 		9B5DA34C2374E5EE005E61E2 /* EmailValidationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DA34B2374E5EE005E61E2 /* EmailValidationExtension.swift */; };
 		9BB065AC2373B6D4002365A8 /* bill.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB065AB2373B6D4002365A8 /* bill.plist */; };
+		9BB8E17123763A2B003F2D26 /* AddNewBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8E17023763A2B003F2D26 /* AddNewBillViewController.swift */; };
 		9BC03D722376182A00D337A4 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC03D712376182A00D337A4 /* Customer.swift */; };
 		9BC03D742376192200D337A4 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC03D732376192200D337A4 /* Bill.swift */; };
 		9BC03D782376198400D337A4 /* InternetBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC03D772376198400D337A4 /* InternetBill.swift */; };
@@ -32,7 +33,6 @@
 		9BFCF24F2375EFA50031EC36 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF24E2375EFA50031EC36 /* DateExtension.swift */; };
 		9BFCF2512375EFAB0031EC36 /* UnitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF2502375EFAB0031EC36 /* UnitExtension.swift */; };
 		9BFCF2592375F7AE0031EC36 /* HydroBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF2582375F7AE0031EC36 /* HydroBill.swift */; };
-		9BFCF2612375FDA20031EC36 /* BillViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF2602375FDA20031EC36 /* BillViewCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +48,7 @@
 		9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
 		9B5DA34B2374E5EE005E61E2 /* EmailValidationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationExtension.swift; sourceTree = "<group>"; };
 		9BB065AB2373B6D4002365A8 /* bill.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = bill.plist; sourceTree = "<group>"; };
+		9BB8E17023763A2B003F2D26 /* AddNewBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewController.swift; sourceTree = "<group>"; };
 		9BC03D712376182A00D337A4 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9BC03D732376192200D337A4 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		9BC03D772376198400D337A4 /* InternetBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetBill.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		9BFCF24E2375EFA50031EC36 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		9BFCF2502375EFAB0031EC36 /* UnitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtension.swift; sourceTree = "<group>"; };
 		9BFCF2582375F7AE0031EC36 /* HydroBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydroBill.swift; sourceTree = "<group>"; };
-		9BFCF2602375FDA20031EC36 /* BillViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 				9B1F6719236B835400AB5220 /* AddNewCustomerViewController.swift */,
 				9BE8F011236C84A600E33D87 /* customer.plist */,
 				9BB065AB2373B6D4002365A8 /* bill.plist */,
-				9BFCF2602375FDA20031EC36 /* BillViewCellTableViewCell.swift */,
+				9BB8E17023763A2B003F2D26 /* AddNewBillViewController.swift */,
 			);
 			path = C0766256_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -219,12 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC03D782376198400D337A4 /* InternetBill.swift in Sources */,
+				9BB8E17123763A2B003F2D26 /* AddNewBillViewController.swift in Sources */,
 				9B1F6706236B6A5300AB5220 /* LoginViewController.swift in Sources */,
 				9BFCF24F2375EFA50031EC36 /* DateExtension.swift in Sources */,
 				9BFCF24B2375EF9D0031EC36 /* DataUsedExtension.swift in Sources */,
 				9BFCF2592375F7AE0031EC36 /* HydroBill.swift in Sources */,
 				9BC03D742376192200D337A4 /* Bill.swift in Sources */,
-				9BFCF2612375FDA20031EC36 /* BillViewCellTableViewCell.swift in Sources */,
 				9BF638412375DC3200960225 /* Int+String casting.swift in Sources */,
 				9B5DA34C2374E5EE005E61E2 /* EmailValidationExtension.swift in Sources */,
 				9BF6383F2375DC1A00960225 /* Extension+Float.swift in Sources */,

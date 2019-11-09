@@ -11,12 +11,10 @@ class InternetBill: Bill {
     //  Variable declaration
     var providerName : String
     var gbUsed : Float
-    var billAmount : Float
     //  Initializer
     init(providerName : String, gbUsed : Float, billAmount : Float, billId : Int , billDate : String, billType : Bill.bTypes){
         self.providerName = providerName
         self.gbUsed = gbUsed
-        self.billAmount = billAmount
-        super.init(billId: billId, billDate: billDate, billType: billType)
+        super.init(billId: billId, billDate: billDate, billType: billType, billAmount: billAmount)
 }
 }

@@ -19,7 +19,17 @@ class Customer {
     var email : String
     var billDictionary = [Int:Bill]()
     var  totalBill : Float?
-    let array1 = [Bill]()
+    
+    
+    static var activeCustomer = Customer()
+    
+     init()
+     {
+           self.custId = Int()
+           self.firstName = String()
+           self.lastName = String()
+           self.email = String()
+    }
     init(custId : Int, firstName : String, lastName : String, email : String, billDictionary : [Int:Bill]){
         self.custId = custId
         self.firstName = firstName

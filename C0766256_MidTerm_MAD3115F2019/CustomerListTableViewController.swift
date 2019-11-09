@@ -19,12 +19,6 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
     
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        CustTable.dataSource = self
-        CustTable.delegate = self
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -41,14 +35,16 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
         return cell
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        CustTable.reloadData()
-    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyb = UIStoryboard(name: "Main", bundle: nil)
-        
-         let BillListVC = storyb.instantiateViewController(withIdentifier: "BillListVC") as! BillDetailsViewController
+        let BillListVC = storyb.instantiateViewController(withIdentifier: "BillListVC") as! BillDetailsViewController
         BillListVC.billInformation=sinObj.returnCustObject(customerID: indexPath.row+1); self.navigationController?.pushViewController(BillListVC, animated: true)
+        //let temp = sinObj.returnCustObject(customerID: Int(indexPath.row+1))
+//        Customer.activeCustomer.custId = temp!.custId
+//        Customer.activeCustomer.firstName = temp!.firstName
+//        Customer.activeCustomer.lastName = temp!.lastName
+//
     }
     
 @IBAction func AddCustomerButton(_ sender: UIBarButtonItem)
@@ -58,9 +54,14 @@ class CustomerListTableViewController: UIViewController,UITableViewDelegate,UITa
     navigationController?.pushViewController(NewCustomerVC, animated: true)
     
 }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        CustTable.dataSource = self
+        CustTable.delegate = self
+    }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        CustTable.reloadData()
+    }
+    
 }

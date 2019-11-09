@@ -18,9 +18,11 @@ class Bill{
         case Hydro
     }
     var billType : bTypes
-    init(billId : Int , billDate : String, billType : bTypes) {
+    var billAmount : Float
+    init(billId : Int , billDate : String, billType : bTypes, billAmount : Float) {
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
+        self.billAmount = billAmount
     }
 }

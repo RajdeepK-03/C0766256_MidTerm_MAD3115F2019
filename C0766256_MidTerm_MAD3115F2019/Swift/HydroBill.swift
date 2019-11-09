@@ -12,14 +12,12 @@ class HydroBill:Bill{
     //  Variable declaration
     var agencyName : String
     var unitConsumed : Int
-    var billAmount : Float
     
     //  initializer
     init(billID : Int , billDate : String, billType : bTypes, agencyName : String, unitConsumed : Int , billAmount : Float) {
         self.agencyName = agencyName
         self.unitConsumed = unitConsumed
-        self.billAmount = billAmount
-        super.init(billId : billID, billDate : billDate, billType : billType)
+        super.init(billId : billID, billDate : billDate, billType : billType, billAmount: billAmount)
         
     }
     

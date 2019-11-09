@@ -45,15 +45,16 @@ class LoginViewController: UIViewController {
             
             navigationController?.pushViewController(CustomerVC, animated: true)
             
-            if(RememberMeSwitch.isOn)
-            {
-                print("Write Code to remember userId/Password")
-            }
-            else
-            {
-                print("Remove UserId/Password if previously remembered/stored")
-            }
+//            if(RememberMeSwitch.isOn)
+//            {
+//                print("Write Code to remember userId/Password")
+//            }
+//            else
+//            {
+//                print("Remove UserId/Password if previously remembered/stored")
+//            }
             
+       
         }
             
             

@@ -49,20 +49,24 @@ class Singleton: NSObject
         
     
         let cust1 = Customer(custId: 1, firstName: "deep", lastName: "kaur", email: "deep@gmail.com", billDictionary: [i1.billId : i1, m1.billId : m1])
+        
         AddCustomer(customer: cust1)
         
+        print(cust1)
         
-        let h1 = HydroBill(billID : 3 , billDate : "Wednesday, 19 June, 2019", billType : Bill.bTypes.Hydro, agencyName : "Planet Energy", unitConsumed : 29 , billAmount : 54.35)
-        let i2 = InternetBill(providerName : "Fido", gbUsed : 600, billAmount : 70.00, billId : 4 , billDate : "Wednesday, 29 June, 2019", billType : Bill.bTypes.Internet)
+        let h1 = HydroBill(billID : 1 , billDate : "Wednesday, 19 June, 2019", billType : Bill.bTypes.Hydro, agencyName : "Planet Energy", unitConsumed : 29 , billAmount : 54.35)
+        let i2 = InternetBill(providerName : "Fido", gbUsed : 600, billAmount : 70.00, billId : 2 , billDate : "Wednesday, 29 June, 2019", billType : Bill.bTypes.Internet)
         
         let cust2 = Customer(custId: 2, firstName: "Rajdeep", lastName: "Kaur", email: "Rajdeep@gmail.com", billDictionary: [h1.billId : h1, i2.billId : i2])
         AddCustomer(customer: cust2)
+        print (cust2)
         
+        let m2 = MobileBill(manufacturerName:"Apple", planName:"Prepaid Talk + Messages", phoneNumber:6476954211, internetUsed:6, minutesUsed:124, billAmount:80.00, billId : 1, billType : Bill.bTypes.Mobile, billDate: "Friday, 19 June, 2019")
         
-        let m2 = MobileBill(manufacturerName:"Apple", planName:"Prepaid Talk + Messages", phoneNumber:6476954211, internetUsed:6, minutesUsed:124, billAmount:80.00, billId : 5, billType : Bill.bTypes.Mobile, billDate: "Friday, 19 June, 2019")
         let cust3 = Customer(custId: 3, firstName: "gagan", lastName: "kang", email: "gagan@gmail.com", billDictionary: [m2.billId : m2])
         AddCustomer(customer: cust3)
         let cust4 = Customer(custId: 4, firstName: "jaspreet", lastName: "Kaur", email: "preet@gmail.com")
+        
         AddCustomer(customer: cust4)
         let cust5 = Customer(custId: 5, firstName: "preet", lastName: "chahal", email: "preet@gmail.com")
         AddCustomer(customer: cust5)
