@@ -77,6 +77,7 @@ class Singleton: NSObject
         let cust4 = Customer(custId: 4, firstName: "jaspreet", lastName: "Kaur", email: "preet@gmail.com", billDictionary: [ m3.billId: m3])
         AddCustomer(customer: cust4)
         
+        // cust 5
         
         let h5 = HydroBill(billID : 1 , billDate : "Tuesday, 01 June, 2018", billType : Bill.bTypes.Hydro, agencyName : "Planet", unitConsumed : 40 , billAmount : 64.36)
         
