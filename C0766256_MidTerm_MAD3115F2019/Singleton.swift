@@ -53,7 +53,7 @@ class Singleton: NSObject
         
         AddCustomer(customer: cust1)
         
-        print(cust1)
+        //print(cust1)
         
     
        // cust 2 data
@@ -63,7 +63,7 @@ class Singleton: NSObject
         
         let cust2 = Customer(custId: 2, firstName: "Rajdeep", lastName: "Kaur", email: "Rajdeep@gmail.com", billDictionary: [h1.billId : h1, i2.billId : i2])
         AddCustomer(customer: cust2)
-        print (cust2)
+       // print (cust2)
         
         let m2 = MobileBill(manufacturerName:"Apple", planName:"Prepaid Talk + Messages", phoneNumber:6476954211, internetUsed:6, minutesUsed:124, billAmount:80.00, billId : 1, billType : Bill.bTypes.Mobile, billDate: "Friday, 19 June, 2019")
         
