@@ -65,10 +65,16 @@ class Singleton: NSObject
         
         let cust3 = Customer(custId: 3, firstName: "gagan", lastName: "kang", email: "gagan@gmail.com", billDictionary: [m2.billId : m2])
         AddCustomer(customer: cust3)
-        let cust4 = Customer(custId: 4, firstName: "jaspreet", lastName: "Kaur", email: "preet@gmail.com")
         
+        let m3 = MobileBill(manufacturerName:"Sony", planName:"Prepaid Talk + Messages", phoneNumber:6472143259, internetUsed:6, minutesUsed:120, billAmount:70.00, billId : 1, billType : Bill.bTypes.Mobile, billDate: "Friday, 19 July, 2019")
+        let cust4 = Customer(custId: 4, firstName: "jaspreet", lastName: "Kaur", email: "preet@gmail.com", billDictionary: [ m3.billId: m3])
         AddCustomer(customer: cust4)
-        let cust5 = Customer(custId: 5, firstName: "preet", lastName: "chahal", email: "preet@gmail.com")
+        
+        
+        let h5 = HydroBill(billID : 1 , billDate : "Wednesday, 01 June, 2018", billType : Bill.bTypes.Hydro, agencyName : "Planet", unitConsumed : 40 , billAmount : 64.36)
+        
+        let i5 = InternetBill(providerName : "Fido", gbUsed : 20, billAmount : 30.00, billId : 2 , billDate : "Friday, 29 August, 2019", billType : Bill.bTypes.Internet)
+        let cust5 = Customer(custId: 5, firstName: "preet", lastName: "chahal", email: "preet@gmail.com", billDictionary: [h5.billId: h5, i5.billId: i5])
         AddCustomer(customer: cust5)
         
             
